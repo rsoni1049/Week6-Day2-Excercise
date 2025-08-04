@@ -1,55 +1,93 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
        <!-- Meta tags -->
-       <meta charset = "utf-8">
-       <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        
        <!-- Bootstrap CSS -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
        
-       <title>Bootstrap 4 Example</title>
-       
+       <title>Bootstrap 4 Utility Classes</title>
+       <style>
+         .demo-box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+         }
+         .flex-item {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+         }
+     </style>
     </head>
     
     <body>
-      <div class = "container">
+      <div class="container">
+         <h1 class="my-4">Bootstrap Utility Classes</h1>
+         
+         <!-- Shadow Utilities Section -->
+         <h2>Shadow Utilities</h2>
+         <div class="demo-box shadow-none">shadow-none</div>
+         <div class="demo-box shadow-sm">shadow-sm</div>
+         <div class="demo-box shadow">shadow (regular)</div>
+         <div class="demo-box shadow-lg">shadow-lg</div>
+         
+         <hr class="my-5">
+         
+         <!-- Flex Utilities Section -->
          <h2>Flex Behaviors</h2>
-         <div class = "d-flex p-2 bg-info">
+         <div class="d-flex p-2 bg-info text-white">
             This is flex container, uses the 'd-flex' class
          </div>
          <br>
          
-         <div class = "d-inline-flex p-2 bg-info">
+         <div class="d-inline-flex p-2 bg-info text-white">
             This is inline flexbox container, uses the 'd-inline-flex' class
          </div>
-         <br>
-         <br>
+         <br><br>
 
          <h2>Direction</h2>
          <h4>Horizontal Direction</h4>
-         <div class = "d-flex flex-row bg-info mb-3">
-            <div class = "p-2 border border-dark ">flex-row: Item 1</div>
-            <div class = "p-2 border border-dark">flex-row: Item 2</div>
-            <div class = "p-2 border border-dark">flex-row: Item 3</div>
+         <div class="d-flex flex-row bg-info mb-3">
+            <div class="p-2 border border-dark bg-light">flex-row: Item 1</div>
+            <div class="p-2 border border-dark bg-light">flex-row: Item 2</div>
+            <div class="p-2 border border-dark bg-light">flex-row: Item 3</div>
          </div>
-         <div class = "d-flex flex-row-reverse bg-info">
-            <div class = "p-2 border border-dark">flex-row-reverse: Item 1</div>
-            <div class = "p-2 border border-dark">flex-row-reverse: Item 2</div>
-            <div class = "p-2 border border-dark">flex-row-reverse: Item 3</div>
+         <div class="d-flex flex-row-reverse bg-info">
+            <div class="p-2 border border-dark bg-light">flex-row-reverse: Item 1</div>
+            <div class="p-2 border border-dark bg-light">flex-row-reverse: Item 2</div>
+            <div class="p-2 border border-dark bg-light">flex-row-reverse: Item 3</div>
          </div>
          <br>
 
          <h4>Vertical Direction</h4>
-         <div class = "d-flex flex-column bg-info mb-3">
-            <div class = "p-2 border border-dark">flex-column: Item 1</div>
-            <div class = "p-2 border border-dark">flex-column: Item 2</div>
-            <div class = "p-2 border border-dark">flex-column: Item 3</div>
+         <div class="d-flex flex-column bg-info mb-3">
+            <div class="p-2 border border-dark bg-light">flex-column: Item 1</div>
+            <div class="p-2 border border-dark bg-light">flex-column: Item 2</div>
+            <div class="p-2 border border-dark bg-light">flex-column: Item 3</div>
          </div>
-         <div class = "d-flex flex-column-reverse bg-info">
-            <div class = "p-2 border border-dark">flex-column-reverse: Item 1</div>
-            <div class = "p-2 border border-dark">flex-column-reverse: Item 2</div>
-            <div class = "p-2 border border-dark">flex-column-reverse: Item 3</div>
+         <div class="d-flex flex-column-reverse bg-info">
+            <div class="p-2 border border-dark bg-light">flex-column-reverse: Item 1</div>
+            <div class="p-2 border border-dark bg-light">flex-column-reverse: Item 2</div>
+            <div class="p-2 border border-dark bg-light">flex-column-reverse: Item 3</div>
+         </div>
+         
+         <!-- Additional Flex Examples -->
+         <h2 class="mt-5">Flex Justify Content</h2>
+         <div class="d-flex justify-content-start bg-light p-2 mb-2">
+            <div class="flex-item bg-primary text-white">Start</div>
+         </div>
+         <div class="d-flex justify-content-center bg-light p-2 mb-2">
+            <div class="flex-item bg-primary text-white">Center</div>
+         </div>
+         <div class="d-flex justify-content-end bg-light p-2 mb-2">
+            <div class="flex-item bg-primary text-white">End</div>
          </div>
       </div>
        
@@ -59,4 +97,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
        
     </body>
- </html>
+</html>
