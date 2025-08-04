@@ -8,7 +8,7 @@
        <!-- Bootstrap CSS -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
        
-       <title>Bootstrap 4 Example</title>
+       <title>Bootstrap 4 Navbar Demo</title>
        <style>
          .container .navbar-brand {
             color: aquamarine;
@@ -18,16 +18,19 @@
     
     <body>
       <div class="container">
-         <h2>Basic Navbar</h2>
+         <h2>Navbar with Dropdown</h2>
          <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
             <a class="navbar-brand" href="#">Menu</a>
             
-            <!-- Toggle button for mobile -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Collapsible content -->
+            <!-- Collapsible Content -->
             <div class="collapse navbar-collapse" id="navbarContent">
                <ul class="navbar-nav">
                   <li class="nav-item active">
@@ -36,6 +39,20 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">About Us</a>
                   </li>
+                  
+                  <!-- Dropdown Menu Item -->
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Technologies
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">HTML-5</a>
+                        <a class="dropdown-item" href="#">CSS-3</a>
+                        <a class="dropdown-item" href="#">Bootstrap-4</a>
+                     </div>
+                  </li>
+                  
                   <li class="nav-item">
                      <a class="nav-link" href="#">Contact</a>
                   </li>
